@@ -6,32 +6,32 @@
           <div class="login-icon-group">
             <div class="login-icon-group-title">
               <img :src="logoMini" />
-              <div class="login-icon-group-title-text font25">{{ getThemeConfig.globalViceTitle }}</div>
+              <div class="login-icon-group-title-text font25">{{ "后台管理系统" }}</div>
             </div>
           </div>
           <div v-if="!isScan">
             <el-tabs v-model="tabsActiveName">
-              <el-tab-pane :label="$t('message.label.one1')" name="account">
+<!--              <el-tab-pane :label="$t('message.label.one1')" name="account">-->
                 <Account />
-              </el-tab-pane>
-              <el-tab-pane :label="$t('message.label.two2')" name="mobile">
-                <Mobile />
-              </el-tab-pane>
+<!--              </el-tab-pane>-->
+<!--              <el-tab-pane :label="$t('message.label.two2')" name="mobile">-->
+<!--                <Mobile />-->
+<!--              </el-tab-pane>-->
             </el-tabs>
           </div>
-          <Scan v-if="isScan" />
-          <div class="login-content-main-sacn" @click="isScan = !isScan">
-            <i class="iconfont" :class="isScan ? 'icon-diannao1' : 'icon-barcode-qr'"></i>
-            <div class="login-content-main-sacn-delta"></div>
-          </div>
+<!--          <Scan v-if="isScan" />-->
+<!--          <div class="login-content-main-sacn" @click="isScan = !isScan">-->
+<!--            <i class="iconfont" :class="isScan ? 'icon-diannao1' : 'icon-barcode-qr'"></i>-->
+<!--            <div class="login-content-main-sacn-delta"></div>-->
+<!--          </div>-->
         </div>
       </div>
     </div>
     <div class="login-footer">
       <div class="login-footer-content mt15">
         <div class="login-footer-content-warp">
-          <div>Copyright © 2021-2023 g-fast.cn All Rights Reserved.</div>
-          <div class="mt5">云南奇讯科技有限公司版权所有</div>
+          <div>Copyright © 2021-2023 please give me content thanks.</div>
+          <div class="mt5">gemini</div>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@ export default defineComponent({
         height: 70px;
       }
       &-text {
-        padding-left: 5px;
+        padding-left: 22px;
         color: var(--el-color-primary);
       }
     }
